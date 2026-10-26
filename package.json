@@ -1,0 +1,13 @@
+{
+  "name": "orbit",
+  "version": "0.1.0",
+  "description": "Screen-aware AI assistant with step-by-step guidance",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}

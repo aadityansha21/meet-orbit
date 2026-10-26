@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self'; connect-src http://127.0.0.1:8765"
+    />
+    <link rel="stylesheet" href="overlay.css" />
+  </head>
+  <body>
+    <canvas id="highlight"></canvas>
+    <section id="panel">
+      <form id="ask">
+        <input id="query" placeholder="Ask about your screen (Enter), Esc to close" autocomplete="off" />
+      </form>
+      <p id="status"></p>
+      <div id="guide" hidden>
+        <h2 id="title"></h2>
+        <p id="explanation"></p>
+        <canvas id="diagram" width="320" height="240"></canvas>
+        <nav>
+          <button id="prev">Back</button>
+          <span id="counter"></span>
+          <button id="next">Next</button>
+        </nav>
+      </div>
+    </section>
+    <script src="overlay.js"></script>
+  </body>
+</html>
